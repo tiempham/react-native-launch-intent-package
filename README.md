@@ -1,5 +1,5 @@
 
-# react-native-react-native-launch-intent-package
+# react-native-launch-intent-package
 
 ## Getting started
 
@@ -26,18 +26,9 @@
       compile project(':react-native-react-native-launch-intent-package')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNReactNativeLaunchIntentPackage.sln` in `node_modules/react-native-react-native-launch-intent-package/windows/RNReactNativeLaunchIntentPackage.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Com.Reactlibrary.RNReactNativeLaunchIntentPackage;` to the usings at the top of the file
-  - Add `new RNReactNativeLaunchIntentPackagePackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import PackageIntentAndroid from 'react-native-launch-intent-package';
 
-PackageIntentAndroid.startIntent('');
+PackageIntentAndroid.startIntent('com.android.settings');
 ```
