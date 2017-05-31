@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNReactNativeLaunchIntentPackage } = NativeModules;
+const { PackageIntentAndroid } = NativeModules;
 
-export default RNReactNativeLaunchIntentPackage;
+module.exports = { PackageIntentAndroid };
