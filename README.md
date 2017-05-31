@@ -37,8 +37,7 @@
 
 ## Usage
 ```javascript
-import RNReactNativeLaunchIntentPackage from 'react-native-react-native-launch-intent-package';
+import PackageIntentAndroid from 'react-native-launch-intent-package';
 
-// TODO: What to do with the module?
-RNReactNativeLaunchIntentPackage;
+PackageIntentAndroid.startIntent('');
 ```
