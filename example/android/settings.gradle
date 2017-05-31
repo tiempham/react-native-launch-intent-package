@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':react-native-launch-intent-package'
+project(':react-native-launch-intent-package').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-launch-intent-package/android')
+
+include ':app'
