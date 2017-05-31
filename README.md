@@ -18,12 +18,12 @@
   - Add `new RNReactNativeLaunchIntentPackagePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-react-native-launch-intent-package'
-  	project(':react-native-react-native-launch-intent-package').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-react-native-launch-intent-package/android')
+  	include ':react-native-launch-intent-package'
+  	project(':react-native-launch-intent-package').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-launch-intent-package/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-react-native-launch-intent-package')
+      compile project(':react-native-launch-intent-package')
   	```
 
 ## Usage
