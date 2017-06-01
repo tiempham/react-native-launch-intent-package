@@ -15,6 +15,16 @@ import { PackageIntentAndroid } from 'react-native-launch-intent-package';
 
 
 export default class react_native_launch_intent_package extends Component {
+
+  _startSettings() {
+    const packageName = 'com.android.settings';
+    PackageIntentAndroid.canStartIntent(packageName, canStartIntent => {
+      if (canStartIntent) {
+        PackageIntentAndroid.startIntent(packageName);
+      }
+    });
+  }
+
   render() {
     return (
       <View style={styles.container}>
