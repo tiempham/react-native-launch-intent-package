@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-launch-intent-package",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "homepage": "https://github.com/gy-chen/react-native-launch-intent-package",
   "main": "index.js",
