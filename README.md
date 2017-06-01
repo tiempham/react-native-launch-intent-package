@@ -28,7 +28,7 @@
 
 ## Usage
 ```javascript
-import PackageIntentAndroid from 'react-native-launch-intent-package';
+import { PackageIntentAndroid } from 'react-native-launch-intent-package';
 
 const packageName = 'com.android.settings';
 PackageIntentAndroid.canStartIntent(packageName, canStartIntent => {
