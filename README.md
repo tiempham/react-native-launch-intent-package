@@ -14,8 +14,8 @@
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNReactNativeLaunchIntentPackagePackage;` to the imports at the top of the file
-  - Add `new RNReactNativeLaunchIntentPackagePackage()` to the list returned by the `getPackages()` method
+  - Add `import com.reactlibrary.PackageIntentPackage;` to the imports at the top of the file
+  - Add `new PackageIntentPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-launch-intent-package'
@@ -30,5 +30,10 @@
 ```javascript
 import PackageIntentAndroid from 'react-native-launch-intent-package';
 
-PackageIntentAndroid.startIntent('com.android.settings');
+const packageName = 'com.android.settings';
+PackageIntentAndroid.canStartIntent(packageName, canStartIntent => {
+  if (canStartIntent) {
+    PackageIntentAndroid.startIntent(packageName);
+  }
+});
 ```
